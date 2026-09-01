@@ -1,0 +1,37 @@
+# Sustainable Gardening Tools Review — Compost Bins 2026
+
+## Summary
+Composting at home reduces landfill waste and builds soil. This roundup compares the top sustainable compost bins for 2026 across Amazon, Temu, and Alibaba.
+
+## Products Reviewed
+
+### 1. VIVOSUN Outdoor Tumbling Compost Bin — 43 Gallon Dual Chamber
+- Sources: Amazon B08H1XG2TZ
+- Why: Dual chambers let you start fresh while the first batch finishes. Rotating design eliminates manual turning.
+- Sustainability angle: BPA-free plastic, weather-resistant, reduces kitchen waste.
+- Price check: Monitor via Amazon API.
+
+### 2. Greenes Fence Cedar Wood Composter — 174 Gallon
+- Sources: Amazon B01FSIWLCS
+- Why: Untreated cedar, sustainably sourced, chemical-free for food gardens.
+- Sustainability angle: Renewable wood, made in USA, open-bottom design for airflow.
+
+### 3. VEGO Garden In-Ground Worm Composter
+- Sources: Amazon B0B8RQ558J
+- Why: Worm vermicomposting creates nutrient-rich castings.
+- Sustainability angle: Reduces food waste, no electricity needed.
+
+## Comparison Table
+| Product | Capacity | Material | Amazon | Temu | Alibaba |
+|---|---|---|---|---|---|
+| VIVOSUN Tumbler | 43 gal | Plastic/Steel | [link] | — | — |
+| Greenes Fence Cedar | 174 gal | Cedar wood | [link] | — | — |
+| VEGO Worm | in-ground | Plastic | [link] | — | — |
+
+## Price Monitoring
+Track price drops across Amazon, Temu, Alibaba. Alert when below threshold.
+
+## Next Steps
+- Add affiliate links
+- Generate social posts from this review
+- Publish to site and schedule newsletter
