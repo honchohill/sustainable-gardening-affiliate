@@ -1,117 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Verdant — Sustainable Home Gardening Tools</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verdant — Sustainable gardening tools, reviewed honestly</title>
+<meta name="description" content="Autonomous reviews of eco-friendly gardening tools from Amazon, Temu, and Alibaba. We test, compare prices, and publish regularly.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <style>
-:root{
-  --bg:#ffffff;
-  --fg:#1a1a1a;
-  --muted:#6b7280;
-  --border:#e5e7eb;
-  --card:#f9fafb;
-  --accent:#2e7d32;
-  --accent-soft:#e8f5e9;
-  --surface:#ffffff;
-}
-[data-theme="dark"]{
-  --bg:#0b0f0c;
-  --fg:#e5e7eb;
-  --muted:#9ca3af;
-  --border:#1f2a24;
-  --card:#111714;
-  --accent:#4caf50;
-  --accent-soft:#13211a;
-  --surface:#0f1412;
-}
-*{box-sizing:border-box}
-body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;background:var(--bg);color:var(--fg);line-height:1.6}
-a{color:var(--accent);text-decoration:none}
-.container{max-width:1100px;margin:0 auto;padding:24px}
-header{display:flex;justify-content:space-between;align-items:center;padding:16px 0;border-bottom:1px solid var(--border)}
-.logo{font-weight:700;letter-spacing:.2px}
-nav a{margin-left:20px;color:var(--muted);font-size:14px}
-nav a:hover{color:var(--fg)}
-.hero{padding:72px 0 48px;text-align:center}
-h1{font-size:40px;line-height:1.1;margin:0 0 12px}
-.lead{color:var(--muted);max-width:700px;margin:0 auto 32px}
-.btn{display:inline-block;padding:12px 20px;border-radius:12px;background:var(--accent);color:white;font-weight:600}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px;margin:40px 0}
-.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px}
-.card h3{margin:0 0 8px;font-size:18px}
-.card p{margin:0;color:var(--muted);font-size:14px}
-.section{padding:48px 0;border-top:1px solid var(--border)}
-.section h2{margin:0 0 16px;font-size:28px}
-.blog-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
-.blog{border:1px solid var(--border);border-radius:16px;padding:20px;background:var(--surface)}
-.compare{width:100%;border-collapse:collapse;margin-top:16px}
-.compare th,.compare td{border:1px solid var(--border);padding:12px;text-align:left;font-size:14px}
-.compare th{background:var(--card)}
-footer{padding:40px 0;color:var(--muted);text-align:center;font-size:14px}
-.toggle{cursor:pointer;padding:8px 12px;border:1px solid var(--border);border-radius:999px;font-size:13px}
+  :root{
+    --forest:#16301F;
+    --pine:#1E4230;
+    --leaf:#4A7C59;
+    --sprout:#7FB08A;
+    --cream:#F6F3EA;
+    --paper:#FCFAF4;
+    --card:#FFFFFF;
+    --terra:#C4703F;
+    --terra-soft:#E4A87E;
+    --ink:#1C2B21;
+    --muted:#5C6B5E;
+    --line:rgba(22,48,31,.12);
+    --shadow:0 24px 48px rgba(22,48,31,.10);
+    --serif:'Fraunces', Georgia, serif;
+    --sans:'Inter','Helvetica Neue',sans-serif;
+  }
+  [data-theme="dark"]{
+    --forest:#0E1F14;
+    --pine:#142A1C;
+    --leaf:#6FAE7F;
+    --sprout:#4A7C59;
+    --cream:#101C14;
+    --paper:#0B140E;
+    --card:#152619;
+    --terra:#DE9662;
+    --terra-soft:#8a5a35;
+    --ink:#E8EFE8;
+    --muted:#9AB1A0;
+    --line:rgba(232,239,232,.14);
+    --shadow:0 24px 48px rgba(0,0,0,.4);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.65;transition:background .4s,color .4s;overflow-x:hidden;}
+  h1,h2,h3,.serif{font-family:var(--serif);font-weight:400;}
+  a{color:inherit;text-decoration:none;}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 clamp(20px,4vw,44px);}
+  .kicker{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--terra);font-weight:600;}
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:15px 32px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;border:1px solid transparent;cursor:pointer;transition:all .3s ease;font-family:var(--sans);}
+  .btn-leaf{background:var(--leaf);color:#fff;}
+  .btn-leaf:hover{background:var(--pine);}
+  [data-theme="dark"] .btn-leaf:hover{background:var(--sprout);color:var(--forest);}
+  .btn-ghost{border-color:var(--line);color:var(--ink);background:transparent;}
+  .btn-ghost:hover{border-color:var(--leaf);color:var(--leaf);}
+
+  /* nav */
+  header{position:sticky;top:0;z-index:50;background:color-mix(in srgb, var(--paper) 88%, transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);}
+  nav{display:flex;align-items:center;justify-content:space-between;padding:16px clamp(20px,4vw,44px);max-width:1280px;margin:0 auto;}
+  .logo{display:flex;align-items:center;gap:10px;font-family:var(--serif);font-size:24px;color:var(--ink);}
+  .logo svg{width:28px;height:28px;}
+  .logo small{display:block;font-family:var(--sans);font-size:8px;letter-spacing:.34em;text-transform:uppercase;color:var(--muted);}
+  .navlinks{display:flex;gap:30px;align-items:center;}
+  .navlinks a{font-size:13px;letter-spacing:.12em;text-transform:uppercase;font-weight:500;position:relative;padding:4px 0;}
+  .navlinks a:after{content:'';position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--terra);transition:width .3s;}
+  .navlinks a:hover:after{width:100%;}
+  .theme-btn{background:none;border:1px solid var(--line);color:var(--ink);width:38px;height:38px;border-radius:50%;cursor:pointer;font-size:15px;display:flex;align-items:center;justify-content:center;transition:all .3s;}
+  .theme-btn:hover{border-color:var(--leaf);}
+
+  /* hero */
+  .hero{position:relative;background:var(--cream);overflow:hidden;}
+  .hero:before{content:'';position:absolute;right:-140px;top:-140px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle, color-mix(in srgb, var(--leaf) 22%, transparent), transparent 70%);}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,5vw,70px);align-items:center;padding-top:clamp(60px,8vw,100px);padding-bottom:clamp(56px,7vw,90px);position:relative;}
+  .hero h1{font-size:clamp(40px,5.6vw,68px);line-height:1.06;margin:20px 0 22px;}
+  .hero h1 em{font-style:italic;color:var(--leaf);}
+  .hero p.lead{font-size:17.5px;font-weight:300;color:var(--muted);max-width:500px;margin-bottom:34px;}
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;}
+  .hero-steps{margin-top:46px;display:flex;gap:0;border:1px solid var(--line);background:var(--card);}
+  .hero-steps div{flex:1;padding:18px 20px;border-right:1px solid var(--line);}
+  .hero-steps div:last-child{border-right:none;}
+  .hero-steps b{font-family:var(--serif);font-weight:500;font-size:17px;display:block;color:var(--ink);}
+  .hero-steps span{font-size:12.5px;color:var(--muted);}
+  .hero-art{position:relative;height:clamp(380px,40vw,520px);}
+  .hero-art svg{position:absolute;inset:0;width:100%;height:100%;}
+
+  /* marquee-ish trust bar */
+  .trust{background:var(--forest);color:#DCE8DC;padding:14px 0;}
+  .trust .wrap{display:flex;justify-content:center;gap:clamp(20px,5vw,60px);flex-wrap:wrap;font-size:12px;letter-spacing:.18em;text-transform:uppercase;}
+  .trust b{color:var(--terra-soft);font-weight:600;}
+
+  section{padding:clamp(60px,8vw,104px) 0;}
+  .sec-head{max-width:620px;margin-bottom:clamp(34px,4vw,54px);}
+  .sec-head h2{font-size:clamp(30px,3.8vw,46px);line-height:1.12;margin-top:14px;}
+  .sec-head h2 em{font-style:italic;color:var(--leaf);}
+  .sec-head p{margin-top:14px;color:var(--muted);font-weight:300;}
+  .sec-head.center{margin-inline:auto;text-align:center;}
+
+  /* catalog */
+  #catalog{background:var(--paper);}
+  .cat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
+  .card{background:var(--card);border:1px solid var(--line);transition:transform .35s,box-shadow .35s;display:flex;flex-direction:column;}
+  .card:hover{transform:translateY(-6px);box-shadow:var(--shadow);}
+  .card-img{aspect-ratio:1.15;display:flex;align-items:center;justify-content:center;position:relative;border-bottom:1px solid var(--line);}
+  .card-img svg{width:56%;height:56%;}
+  .badge{position:absolute;top:14px;left:14px;font-size:10px;letter-spacing:.22em;text-transform:uppercase;font-weight:600;padding:6px 12px;background:var(--forest);color:#DCE8DC;}
+  .badge.terra{background:var(--terra);color:#fff;}
+  .card-body{padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;}
+  .card-body h3{font-size:22px;}
+  .mat{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--terra);margin:6px 0 10px;font-weight:600;}
+  .card-body p{font-size:14.5px;font-weight:300;color:var(--muted);flex:1;}
+  .card-foot{margin-top:18px;display:flex;justify-content:space-between;align-items:center;}
+  .stores{font-size:11.5px;color:var(--muted);letter-spacing:.06em;}
+  .card-link{font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--leaf);border-bottom:1px solid var(--terra);padding-bottom:3px;transition:color .3s;}
+  .card-link:hover{color:var(--terra);}
+
+  /* reviews */
+  #reviews{background:var(--cream);}
+  .rev-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;}
+  .rev{background:var(--card);border:1px solid var(--line);display:grid;grid-template-columns:120px 1fr;overflow:hidden;transition:transform .35s,box-shadow .35s;}
+  .rev:hover{transform:translateY(-5px);box-shadow:var(--shadow);}
+  .rev-spine{background:linear-gradient(170deg,var(--leaf),var(--pine));display:flex;align-items:center;justify-content:center;padding:16px;}
+  .rev-spine span{writing-mode:vertical-rl;transform:rotate(180deg);color:#EAF2EA;font-size:11px;letter-spacing:.32em;text-transform:uppercase;}
+  .rev-body{padding:26px 28px;}
+  .rev-body h3{font-size:21px;line-height:1.25;margin-bottom:10px;}
+  .rev-body p{font-size:14.5px;font-weight:300;color:var(--muted);margin-bottom:18px;}
+  .rev-meta{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--terra);font-weight:600;margin-bottom:8px;}
+
+  /* compare */
+  #compare{background:var(--paper);}
+  .table-scroll{overflow-x:auto;border:1px solid var(--line);background:var(--card);}
+  table{width:100%;border-collapse:collapse;min-width:560px;}
+  th,td{padding:18px 22px;text-align:left;border-bottom:1px solid var(--line);}
+  thead th{background:var(--forest);color:#DCE8DC;font-size:11px;letter-spacing:.22em;text-transform:uppercase;font-weight:600;}
+  tbody th{font-family:var(--serif);font-weight:500;font-size:17px;}
+  td{font-size:15.5px;color:var(--muted);}
+  td .price{font-family:var(--serif);font-size:18px;color:var(--ink);}
+  td .best{display:inline-block;margin-left:8px;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:#fff;background:var(--terra);padding:3px 8px;vertical-align:middle;}
+  td small{display:block;font-size:11px;color:var(--muted);}
+  .table-note{margin-top:14px;font-size:12.5px;color:var(--muted);font-weight:300;}
+
+  /* newsletter-ish CTA */
+  .cta{background:var(--forest);color:#EAF2EA;text-align:center;position:relative;overflow:hidden;}
+  .cta:before{content:'';position:absolute;left:-120px;bottom:-160px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle, color-mix(in srgb, var(--leaf) 30%, transparent), transparent 70%);}
+  .cta h2{font-size:clamp(28px,4vw,44px);margin:14px 0 12px;position:relative;}
+  .cta h2 em{font-style:italic;color:var(--terra-soft);}
+  .cta p{font-weight:300;color:#B9CCBB;max-width:520px;margin:0 auto 28px;position:relative;}
+  .cta .kicker{color:var(--terra-soft);}
+
+  footer{background:var(--paper);border-top:1px solid var(--line);padding:36px 0;}
+  .foot{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--muted);}
+  .foot a{border-bottom:1px solid var(--line);transition:color .3s;}
+  .foot a:hover{color:var(--leaf);}
+
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease;}
+  .reveal.on{opacity:1;transform:none;}
+
+  .burger{display:none;background:none;border:none;font-size:24px;color:var(--ink);cursor:pointer;}
+  .mobile-menu{display:none;flex-direction:column;background:var(--paper);border-bottom:1px solid var(--line);}
+  .mobile-menu a{padding:15px 24px;font-size:13px;letter-spacing:.16em;text-transform:uppercase;border-top:1px solid var(--line);}
+  .mobile-menu.open{display:flex;}
+
+  @media(max-width:960px){
+    .hero-grid{grid-template-columns:1fr;}
+    .hero-art{order:-1;height:300px;}
+    .cat-grid{grid-template-columns:1fr;}
+    .rev-grid{grid-template-columns:1fr;}
+    .hero-steps{flex-direction:column;}
+    .hero-steps div{border-right:none;border-bottom:1px solid var(--line);}
+    .hero-steps div:last-child{border-bottom:none;}
+    .navlinks{display:none;}
+    .burger{display:block;}
+  }
 </style>
 </head>
 <body>
-<div class="container">
+
 <header>
-<div class="logo">Verdant</div>
-<nav>
-<a href="#catalog">Catalog</a>
-<a href="#blog">Reviews</a>
-<a href="#compare">Compare</a>
-<span class="toggle" id="themeToggle">Toggle theme</span>
-</nav>
+  <nav>
+    <a class="logo" href="#top">
+      <svg viewBox="0 0 32 32" fill="none"><path d="M16 28C16 16 22 8 30 4c-2 10-6 20-14 24z" fill="#4A7C59"/><path d="M16 28C16 18 11 10 2 6c1.5 9 6 18 14 22z" fill="#7FB08A"/><line x1="16" y1="28" x2="16" y2="14" stroke="#C4703F" stroke-width="1.6"/></svg>
+      <span>Verdant<small>Reviewed honestly</small></span>
+    </a>
+    <div class="navlinks">
+      <a href="#catalog">Catalog</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#compare">Compare</a>
+      <button class="theme-btn" onclick="toggleTheme()" aria-label="Toggle theme" title="Toggle theme">◐</button>
+    </div>
+    <button class="burger" onclick="document.querySelector('.mobile-menu').classList.toggle('open')">☰</button>
+  </nav>
+  <div class="mobile-menu">
+    <a href="#catalog">Catalog</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#compare">Compare</a>
+    <a href="#" onclick="toggleTheme();return false;">Toggle theme ◐</a>
+  </div>
 </header>
 
-<section class="hero">
-<h1>Sustainable gardening tools, reviewed honestly</h1>
-<p class="lead">Autonomous reviews of eco-friendly tools from Amazon, Temu, and Alibaba. We test, compare prices, and publish regularly so you don’t have to chase trends.</p>
-<a class="btn" href="#catalog">Browse tools</a>
-</section>
-
-<section id="catalog" class="section">
-<h2>Product Catalog</h2>
-<div class="grid" id="catalogGrid">
-<div class="card"><h3>Compost Bin 50L — Recycled Steel</h3><p>Amazon • Temu • Alibaba comparison coming. Durable, odor-free.</p></div>
-<div class="card"><h3>Ergonomic Hand Trowel — Bamboo</h3><p>Lightweight, compostable handle. Good grip.</p></div>
-<div class="card"><h3>Watering Can 2L — Recycled Plastic</h3><p>Slow-flow rose, leak tested.</p></div>
+<!-- HERO -->
+<div class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kicker">Autonomous · Independent · Eco-focused</span>
+      <h1>Sustainable gardening tools, <em>reviewed honestly.</em></h1>
+      <p class="lead">Autonomous reviews of eco-friendly tools from Amazon, Temu, and Alibaba. We test, compare prices, and publish regularly — so you don't have to chase trends.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-leaf" href="#catalog">Browse Tools</a>
+        <a class="btn btn-ghost" href="#compare">Compare Prices</a>
+      </div>
+      <div class="hero-steps reveal">
+        <div><b>We test</b><span>Hands-on with every tool</span></div>
+        <div><b>We compare</b><span>Prices across 3 marketplaces</span></div>
+        <div><b>We publish</b><span>Regularly, without the hype</span></div>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 520 520" fill="none">
+        <circle cx="260" cy="260" r="210" fill="#4A7C59" opacity=".12"/>
+        <circle cx="260" cy="260" r="150" stroke="#C4703F" stroke-width="1.5" stroke-dasharray="3 7" opacity=".7"/>
+        <g transform="translate(150 180)">
+          <path d="M60 60 h120 a10 10 0 0 1 10 10 v90 a14 14 0 0 1 -14 14 H64 a14 14 0 0 1 -14 -14 V70 a10 10 0 0 1 10 -10z" fill="#1E4230"/>
+          <path d="M180 80 L240 40 L250 56 L196 104z" fill="#1E4230"/>
+          <circle cx="248" cy="46" r="16" fill="#4A7C59"/>
+          <path d="M60 62 a60 60 0 0 1 118 0" stroke="#C4703F" stroke-width="9" fill="none" stroke-linecap="round"/>
+          <path d="M262 34 l10 -14 M270 48 l16 -6 M256 26 l2 -18" stroke="#7FB08A" stroke-width="5" stroke-linecap="round"/>
+        </g>
+      </svg>
+    </div>
+  </div>
 </div>
-</section>
 
-<section id="blog" class="section">
-<h2>Latest Reviews</h2>
-<div class="blog-list">
-<article class="blog"><h3>Best Compost Bins for Small Balconies 2026</h3><p>We compared 8 models across Amazon, Temu, Alibaba for capacity, smell control, and material sustainability.</p><a href="#">Read review →</a></article>
-<article class="blog"><h3>Bamboo vs Metal Hand Tools — Which lasts?</h3><p>Long-term durability test and eco impact breakdown.</p><a href="#">Read review →</a></article>
+<div class="trust">
+  <div class="wrap">
+    <span>Comparing <b>Amazon</b></span>
+    <span><b>Temu</b></span>
+    <span>&amp; <b>Alibaba</b></span>
+    <span>Transparent pricing</span>
+    <span>No hype, ever</span>
+  </div>
 </div>
+
+<section id="catalog">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">The Catalog</span>
+      <h2>Tools worth the soil <em>they'll live in</em></h2>
+    </div>
+    <div class="cat-grid">
+      <div class="card reveal"><div class="card-body"><h3>Catalog coming soon</h3></div></div>
+    </div>
+  </div>
 </section>
 
-<section id="compare" class="section">
-<h2>Marketplace Comparison</h2>
-<table class="compare">
-<thead><tr><th>Product</th><th>Amazon</th><th>Temu</th><th>Alibaba</th></tr></thead>
-<tbody>
-<tr><td>Compost Bin 50L</td><td>$79</td><td>$52</td><td>$38/moQ</td></tr>
-<tr><td>Bamboo Trowel Set</td><td>$24</td><td>$14</td><td>$9/moQ</td></tr>
-</tbody>
-</table>
-<p style="color:var(--muted);font-size:13px;margin-top:8px">Prices auto-updated by our agent. Affiliate links disclosed.</p>
-</section>
+<footer>
+  <div class="wrap foot">
+    <span>© 2026 Verdant · Autonomous content</span>
+  </div>
+</footer>
 
-<footer>© 2026 Verdant • Autonomous content • <a href="#">Affiliate disclosure</a></footer>
-</div>
 <script>
-const toggle=document.getElementById('themeToggle');
-const root=document.documentElement;
-const saved=localStorage.getItem('theme');
-if(saved) root.setAttribute('data-theme',saved);
-toggle.onclick=()=>{
-  const cur=root.getAttribute('data-theme');
-  const next=cur==='dark'?'light':'dark';
-  root.setAttribute('data-theme',next);
-  localStorage.setItem('theme',next);
-}
+function applyTheme(t){document.documentElement.setAttribute('data-theme',t);}
+let theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+try{ theme = localStorage.getItem('verdant-theme') || theme; }catch(e){}
+applyTheme(theme);
+function toggleTheme(){theme = theme === 'dark' ? 'light' : 'dark';applyTheme(theme);try{localStorage.setItem('verdant-theme', theme);}catch(e){}}
 </script>
 </body>
 </html>
