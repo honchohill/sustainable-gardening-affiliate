@@ -1,0 +1,30 @@
+[2026-09-07] Affiliate Content Factory — Run Log
+
+GIT COMMIT: 13e9510 (master)
+
+PRODUCTS RESearched and Published:
+  1. VIVOSUN 43 Gallon Dual Chamber Tumbling Composter (B08346W5S6)
+     - Price: ~$79.99 | Rating: 4.3/5 (9,800+ reviews)
+     - Sustainability: Dual-chamber home composting, diverts food waste from landfills
+     - File: content/2026-09-08-vivosun-43-gallon-tumbling-composter.md
+
+  2. Radius Garden Root Slayer Shovel (B001D1FFZA)
+     - Price: $59.99 | Rating: 4.8/5 (10,229 reviews)
+     - Sustainability: Lifetime guarantee, single-tool consolidation, US-manufactured
+     - File: content/2026-09-08-radius-garden-root-slayer-shovel.md
+
+  3. Earthwise 16-Inch 7-Blade Push Reel Mower (B01LYVKRI9)
+     - Price: $119.99 | Rating: 4.2/5 (1,777 reviews)
+     - Sustainability: Zero emissions, no gas/oil/spray, clean scissor cut reduces disease
+     - File: content/2026-09-08-earthwise-push-reel-mower.md
+
+METRICS: metrics.csv updated with all 3 product rows (proper CSV header)
+
+PUBLISH: 
+  - Git add + commit: OK
+  - Hugo build: FAILED (hugo not installed on this host; content committed and ready for remote build)
+
+NOTES:
+  - All products confirmed absent from existing content catalog
+  - Affiliate tag (homegarde04d7-20) applied to all links
+  - ~800 words per review, SEO frontmatter included
