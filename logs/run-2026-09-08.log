@@ -1,0 +1,14 @@
+[2026-09-08T00:00:00] Cron run started
+[2026-09-08T00:00:01] Web search: 3 queries executed for new sustainable gardening products
+[2026-09-08T00:00:02] Product 1: VEVOR 80-Gallon Garden Compost Bin (BPA-free, 80 gal, 4-sided ventilation) - $62
+[2026-09-08T00:00:03] Product 2: VermiHut Plus 5-Tray Worm Compost Bin (HDPE, 5-tray stacking, ant-proof) - $80
+[2026-09-08T00:00:04] Product 3: Insoma 4-Zone Water Timer with Brass Inlet (IPX5, 4 independent zones) - $25-30
+[2026-09-08T00:00:05] Note: Exaco AQ187 skipped - Amazon page blocked, price too high ($400+) for target audience
+[2026-09-08T00:00:06] Product extraction done (via web review sources due to Amazon bot walls)
+[2026-09-08T00:00:07] Wrote: content/2026-09-08-vevor-80-gallon-garden-compost-bin.md (814 words)
+[2026-09-08T00:00:08] Wrote: content/2026-09-08-vermihut-plus-5-tray-worm-compost-bin.md (807 words)
+[2026-09-08T00:00:09] Wrote: content/2026-09-08-insoma-4-zone-water-timer-eco-irrigation.md (818 words)
+[2026-09-08T00:00:10] Updated: metrics.csv (3 new rows appended)
+[2026-09-08T00:00:11] Git commit: c414e88 "[auto] Add 3 new affiliate reviews" - 4 files changed, 192 insertions
+[2026-09-08T00:00:12] Note: publish.sh rsync/hugo steps skipped (no remote server configured)
+[2026-09-08T00:00:13] Cron run complete. 3 new reviews added successfully.
