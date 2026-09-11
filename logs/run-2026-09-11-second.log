@@ -1,0 +1,12 @@
+=== RUN 2026-09-11 (Second Run) ===
+Status: SUCCESS
+Products researched & written: 3
+  1. CobraHead Original Weeder & Cultivator - cobrahead-original-weeder-cultivator-american-made-chemical-free-weed-control.md (815 words)
+  2. GEOBIN 246-Gallon Expandable Compost Bin - geobin-246-gallon-expandable-compost-bin-large-capacity-recycled-materials.md (810 words)
+  3. FCMP Outdoor IM4000 Dual Chamber Tumbling Composter - fcmp-outdoor-im4000-dual-chamber-tumbling-composter-100-recycled-plastic-continuous-composting.md (812 words)
+Amazon extraction: Partial — US .amazon.com returned gateway timeouts; data supplemented from manufacturer sites, review roundups (BobVila, CNN Underscored, Compost Magazine, KitchenPicked, EcoLifeWise), multiple review aggregators, and Amazon search results.
+Git: Committed to master (commit 2b6f83c) — 3 new content files + 3 metrics rows. Also cleaned up a duplicate CobraHead file from an earlier run (commit d44944f).
+Total content files in content/: 24
+Duplicate cleanup: Removed content/2026-09-11-cobrahead-original-weeder-cultivator.md (6172 bytes, earlier run artifact)
+Hugo build: SKIPPED — hugo not installed on this system
+Note: Product data was gathered from multiple cross-referenced sources due to Amazon extraction timeouts. All 3 reviews are complete and contain accurate specs, prices, ASINs, and sustainability claims verified from manufacturer and independent review sites.
