@@ -1,0 +1,45 @@
+## 2026-09-13 Affiliate Content Run
+Run date: 2026-09-14
+Status: SUCCESS (partial)
+
+### Products reviewed (3)
+1. 2026-09-14-back-to-the-roots-organic-plantable-seed-starting-pots-review.md
+   - Brand: Back to the Roots
+   - ASIN: B0CJ6J17B4
+   - Price: $5.97 (8-pack)
+   - Words: ~812
+   - Amazon page extracted: YES
+   - Review source extracted: YES (LawnPhix organic fertilizer roundup)
+
+2. 2026-09-14-milorganite-6-4-0-organic-fertilizer-review-2026.md
+   - Brand: Milorganite
+   - ASIN: B07D7H71TR
+   - Price: ~$33-38 (32 lb bag)
+   - Words: ~818
+   - Amazon page extracted: YES
+   - Review source extracted: YES (multiple search results, professional endorsement)
+
+3. 2026-09-14-biogreen-city-jungle-raised-garden-bed-trellis-review.md
+   - Brand: BioGreen
+   - ASIN: B07XS58WQH
+   - Price: $81.64
+   - Words: ~824
+   - Amazon page extracted: YES
+   - Review source extracted: Partial (Amazon page + search results only, no dedicated third-party review page found)
+
+### Pipeline steps
+1. web_search: OK - 3 fresh products discovered, no duplicates against 51 existing files
+2. web_extract: OK - Amazon pages and review sources extracted
+3. Content generation: OK - 3 reviews written (~812-824 words each)
+4. metrics.csv: OK - 3 rows appended (lines 50-52)
+5. git commit: OK - Commit fa41ba2, 3 files added, 203 insertions
+6. Hugo build: FAILED - hugo command not found in PATH. Site not rebuilt.
+
+### Issues
+- Hugo not installed or not on PATH. publish.sh completes git operations fine but fails at line 21 (`hugo`).
+- BioGreen City Jungle review relied on search results rather than a dedicated third-party review page for supplement.
+
+### Metrics
+- New content files: 54 (was 51)
+- CSV rows: 52 (was 49)
+- Git commit: fa41ba2 [master]

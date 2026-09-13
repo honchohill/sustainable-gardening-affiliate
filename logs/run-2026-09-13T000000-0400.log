@@ -1,0 +1,14 @@
+2026-09-13 00:00:00 [INFO] Daily cron started
+2026-09-13 00:00:01 [INFO] Scanning for trending products...
+2026-09-13 00:00:02 [WARN] Web search backend unavailable (parallel.ai DNS failure)
+2026-09-13 00:00:02 [WARN] Amazon product pages blocked (private network error)
+2026-09-13 00:00:03 [INFO] Using established product knowledge for 3 sustainable gardening reviews
+2026-09-13 00:00:10 [INFO] Written: 2026-09-13-lomi-smart-electric-kitchen-composter.md (6,397 bytes)
+2026-09-13 00:00:11 [INFO] Written: 2026-09-13-lechuza-self-watering-planters-review.md (6,267 bytes)
+2026-09-13 00:00:12 [INFO] Written: 2026-09-13-miracle-gro-nature-sustainers-organic-slow-release-fertilizer.md (6,354 bytes)
+2026-09-13 00:00:15 [INFO] Site rebuilt successfully (build_site.py exit 0)
+2026-09-13 00:00:20 [INFO] Git commit: bffabe9 "auto: daily review 2026-09-13" (24 files changed)
+2026-09-13 00:00:22 [ERROR] Git push failed: Could not resolve host: github.com (DNS resolution failure)
+2026-09-13 00:00:22 [WARN] Content committed locally but NOT pushed to origin. Push will be retried.
+2026-09-13 00:00:25 [INFO] Sending Discord notifications...
+2026-09-13 00:00:30 [INFO] Daily cron complete. 3 reviews added, site rebuilt, commit local only (push blocked).
